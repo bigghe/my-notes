@@ -26,10 +26,17 @@
 
 # Software
 
+- Barrier: is software that mimics the functionality of a KVM switch, which historically would allow you to use a single keyboard and mouse to control multiple computers by physically turning a dial on the box to switch the machine you're controlling at any given moment. 
+	Barrier does this in software, allowing you to tell it which machine to control by moving your mouse to the edge of the screen, or by using a keypress to switch focus to a different system.
+
 ## Chat
 
 - Internet Relay Chat (IRC): is an application layer protocol that facilitates communication in the form of text. The chat process works on a client/server networking model.
 
+## SW Pattern
+
+- Facade pattern: is a software-design pattern commonly used in object-oriented programming. 
+	Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code
 
 # TOOL
 
