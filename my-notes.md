@@ -11,6 +11,19 @@
 
 - AWS Keyspaces (for Apache Cassandra): is a scalable, highly available, and managed Apache Cassandra–compatible database service. Apache Cassandra is a free and open-source, distributed, wide column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. 
 
+
+# Bash
+
+- grep: filter matches only from output:
+	grep 'blabla' -o file.log
+
+- Regex in grep:
+	grep -E 'REGEX' file.log
+
+- uniq: filter unique row (delete duplicate only, so could be usefull with 'sort' cmd)
+	less file.log | sort | uniq
+
+
 # Hardware
 
 - SSD SATA (Serial ATA): connection from SSD to different hardware (pc or laptop, old or new)
