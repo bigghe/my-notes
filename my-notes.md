@@ -15,14 +15,19 @@
 # Bash
 
 - grep: filter matches only from output:
-	grep 'blabla' -o file.log
+	```bash
+		grep 'blabla' -o file.log
+     	```
 
 - Regex in grep:
-	grep -E 'REGEX' file.log
+	```bash	
+		grep -E 'REGEX' file.log
+	```
 
 - uniq: filter unique row (delete duplicate only, so could be usefull with 'sort' cmd)
-	less file.log | sort | uniq
-
+	```bash	
+		less file.log | sort | uniq
+	```
 
 # Hardware
 
@@ -34,12 +39,22 @@
 # Network
 
 - Tunneling Protocol: is a communications protocol that allows for the movement of data from one network to another. It involves allowing private network communications to be sent across a public network (such as the Internet) through a process called encapsulation.
-	Because tunneling involves repackaging the traffic data into a different form, perhaps with encryption as standard, it can hide the nature of the traffic that is run through a tunnel.
+Because tunneling involves repackaging the traffic data into a different form, perhaps with encryption as standard, it can hide the nature of the traffic that is run through a tunnel.
+
+- nmap: scanning hosts in the network with 
+	```bash
+		nmap -sn 192.168.1.0/24
+	```
+where '-sn' indicates ping scan and disable port scanning
 
 
 # Raspberry
 
-- Install raspian on sd card via dd: sudo dd bs=4M if=2020-02-13-raspbian-buster-lite.img of=/dev/mmcblk0 conv=fsync status=progress
+- Install raspian on sd card via dd: 
+	```bash
+		sudo dd bs=4M if=2020-02-13-raspbian-buster-lite.img of=/dev/mmcblk0 conv=fsync status=progress
+	```
+
 
 # Software
 
@@ -54,6 +69,7 @@
 
 - Facade pattern: is a software-design pattern commonly used in object-oriented programming. 
 	Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code
+
 
 # TOOL
 
