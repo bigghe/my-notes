@@ -29,6 +29,20 @@
 		less file.log | sort | uniq
 	```
 
+- bash command: semicolon (;) vs double ampersand (&&)
+	1. semicolon: execute the second command, no matter what the exit status of the first command is	
+		Example: 
+		```bash
+		echo "Hello " ; echo "world"
+
+		```
+	2. double ampersand: execute the second command only if the first command runs with success
+		Example:
+		```bash
+		echo "Hello " && echo "world"
+		```
+
+
 # Hardware
 
 - SSD SATA (Serial ATA): connection from SSD to different hardware (pc or laptop, old or new)
