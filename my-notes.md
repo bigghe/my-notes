@@ -36,6 +36,10 @@
 - Tunneling Protocol: is a communications protocol that allows for the movement of data from one network to another. It involves allowing private network communications to be sent across a public network (such as the Internet) through a process called encapsulation.
 	Because tunneling involves repackaging the traffic data into a different form, perhaps with encryption as standard, it can hide the nature of the traffic that is run through a tunnel.
 
+- SSH: the concept of agent forwarding and proxy jump ([resource](https://smallstep.com/blog/ssh-agent-explained/)). It consists in use local ssh-agent in a ssh connection to a remote host, so 2 channels open from local to remote hosts, 1 for ssh interaction and 1 for the ssh-agent. In this way user can use it's local keychain from the remote host itself. The agent forwording can be started on demand (ssh -A ...) or, in .ssh/config, started by default. There are security problems using this over a bastion host to reach a different remote host (since a root user in bastion host can use the agent forwarding for steal keychain of a ssh session of another user), so the best way it's: 
+	1. Put ssh-agent under password
+	2. Use ProxyJump, in this way the ssh session will be from your local workstation and not throught a bastion host
+
 
 # Software
 
